@@ -18,12 +18,15 @@ Deep learning-based intrusion detection system for automotive CAN bus networks u
 - Seaborn
 
 ## Dataset
-Uses Car-Hacking Dataset containing:
+Car-Hacking Dataset containing:
 - Normal CAN traffic
 - DoS attacks
 - Fuzzy attacks
 - RPM spoofing
 - Gear spoofing
+
+You can download the dataset from here:
+https://ocslab.hksecurity.net/Datasets/car-hacking-dataset
 
 ## Model Architecture
 - Input: Sequences of 5 CAN messages (10 features each)
@@ -37,13 +40,7 @@ Uses Car-Hacking Dataset containing:
 - False Positive Rate: 15.3%
 - False Negative Rate: 0.05%
 
-## DataSet
-
-You can download the dataset from here:
-https://ocslab.hksecurity.net/Datasets/car-hacking-dataset
-
-
-## Training
+## Usage
 ```bash
 python3 CAN_Bus_Intrusion_Detection_System.py
 ```
