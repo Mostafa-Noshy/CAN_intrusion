@@ -37,20 +37,11 @@ Uses Car-Hacking Dataset containing:
 - False Positive Rate: 15.3%
 - False Negative Rate: 0.05%
 
-## Usage
-```python
-# Load model
-model = CANIDS(input_dim=10)
-checkpoint = torch.load('best_model.pth')
-model.load_state_dict(checkpoint['model_state_dict'])
+## DataSet
 
-# Preprocess data
-X = process_data(can_messages)
+You can download the dataset from here:
+https://ocslab.hksecurity.net/Datasets/car-hacking-dataset
 
-# Make predictions
-with torch.no_grad():
-    predictions = model(X)
-```
 
 ## Training
 ```bash
